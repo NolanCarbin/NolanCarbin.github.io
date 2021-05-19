@@ -1,19 +1,59 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
-.container {
-    margin: 5em;
-    padding: 1rem;
+.fixedBar {
+    position: fixed;
+    width: 100%;
+}
+
+
+
+.navBar {
+    background-color: rgb(255, 248, 255);
+    height: 80px;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-#colorBtn {
-    margin: 2rem;
-    font-size: large;
+.myName {
+    flex-grow: 8;
+    width: 200px;
+    padding: 30px;
+}
+
+.navButtons {
+    width: 400px;
+    display: flex;
+    flex-grow: 0;
+    justify-content: space-evenly;
+}
+
+.nolanImg {
+    width: 35%;
+    height: auto;
+    padding: 40px;
+}
+
+
+
+
+
+
+
+
+@media all and (max-width: 800px) {
+    .navBar {
+        flex-direction: column;
+        justify-content: center;
+        height: 120px;
+    }
+
+    .myName {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
 }
