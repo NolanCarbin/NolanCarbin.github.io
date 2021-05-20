@@ -9,8 +9,6 @@
     width: 100%;
 }
 
-
-
 .navBar {
     background-color: rgb(255, 248, 255);
     height: 80px;
@@ -33,15 +31,29 @@
 }
 
 .nolanImg {
-    width: 35%;
+    width: 30%;
     height: auto;
-    padding: 40px;
+    padding-left: 60px;
 }
 
+.aboutMeContainer {
+    width: 100%;
+    height: auto;
+    /* background-color: blue; */
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.aboutMeTextContainer {
+    padding-left: 60px;
+    padding-right: 60px;
+}
 
-
-
+.aboutMeText {
+    padding: 10px;
+}
 
 
 
@@ -55,5 +67,25 @@
     .myName {
         padding-bottom: 10px;
         padding-top: 10px;
+    }
+
+    .nolanImg {
+        width: 40%;
+        height: auto;
+        margin-top: 100px;
+        padding-left: 0px;
+    }
+
+    .aboutMeContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 60px;
+    }
+
+    .aboutMeTextContainer {
+        padding-top: 40px;
+        padding-left: 25%;
+        padding-right: 25%;
     }
 }
