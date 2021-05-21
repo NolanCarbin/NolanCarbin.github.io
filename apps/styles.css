@@ -6,35 +6,48 @@
 
 
 .header {
+    background-color: rgb(255, 248, 255, 0.9);
     position: fixed;
     width: 100%;
 }
 
 .navBar {
-    background-color: rgb(255, 248, 255);
     height: 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    margin-right: 120px;
 }
 
 .myName {
-    flex-grow: 8;
-    width: 200px;
-    padding: 30px;
+    flex-shrink: 8;
+    width: 188px;
+    padding: 10px;
+    margin-right: 20px;
 }
 
 .navButtons {
     width: 400px;
     display: flex;
     flex-grow: 0;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.navButton {
+    padding: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navButton:hover {
+    color: #00a4d6;
 }
 
 .nolanImg {
+    border-radius: 50px;
     width: 25%;
     height: auto;
-    padding-left: 60px;
+    margin-left: 95px;
 }
 
 .aboutMeContainer {
@@ -60,6 +73,7 @@
 .footerIcon {
     width: 18%;
     height: auto;
+
 }
 
 .footer {
@@ -72,7 +86,7 @@
 
 .footerContainer {
     /* background-color: gray; */
-    width: 65%;
+    width: 60%;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -81,15 +95,33 @@
 
 .linkContainer {
     /* background-color: pink; */
-    width: 190px;
+    width: 110px;
     height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footerLink {
+.linkContainer:hover .footerIcon {
+    filter: invert(54%) sepia(96%) saturate(1989%) hue-rotate(156deg) brightness(88%) contrast(101%);
+}
+.linkContainer:hover .footerLinkName {
+    color: #00a4d6;
+}
+
+
+
+
+.emailAddress {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.footerLinkName {
     padding-left: 10px;
+    display: block;
 }
 
 
@@ -99,18 +131,20 @@
         flex-direction: column;
         justify-content: center;
         height: 120px;
+        margin-right: 0px;
     }
 
     .myName {
         padding-bottom: 10px;
         padding-top: 10px;
+        margin-right: 0px;
     }
 
     .nolanImg {
         width: 40%;
         height: auto;
         margin-top: 100px;
-        padding-left: 0px;
+        margin-left: 0px;
     }
 
     .aboutMeContainer {
@@ -126,13 +160,8 @@
         padding-right: 25%;
     }
 
-    .footerLink {
+    .footerLinkName {
        display: none;
-    }
-
-    .linkContainer {
-        /* width: 200px */
-        height: auto;
     }
 
     .footerContainer {
@@ -140,7 +169,18 @@
     }
 
     .footerIcon {
-        width: 30%;
+        width: 60%;
         height: auto;
+    }
+
+    .linkContainer {
+        width: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .emailAddress {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
