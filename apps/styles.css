@@ -2,11 +2,26 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --primary: #223843;
+    --secondary: #dbd3d8;
+    --accent: #eff1f3;
+    --hover: #d77a61
+}
+
+h1, h2, p {
+    color: var(--primary);
 }
 
 
+
+
 .header {
-    background-color: rgb(255, 248, 255, 0.9);
+    background-color: var(--accent);
+    opacity: 0.9;
     position: fixed;
     width: 100%;
 }
@@ -14,33 +29,39 @@
 .navBar {
     height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin-right: 120px;
 }
 
 .myName {
-    flex-shrink: 8;
-    width: 188px;
+    font-size: 38px;
+    flex-grow: 8;
+    width: 250px;
     padding: 10px;
-    margin-right: 20px;
+    margin-right: 40px;
+    margin-left: 20px;
 }
 
 .navButtons {
     width: 400px;
     display: flex;
-    flex-grow: 0;
     justify-content: center;
 }
 
 .navButton {
+    font-size: 20px;
     padding: 8px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .navButton:hover {
-    color: #00a4d6;
+    color: var(--hover);
+}
+
+body {
+    background-color: var(--secondary);
 }
 
 .nolanImg {
@@ -80,8 +101,10 @@
     /* background-color: red; */
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 100px;
+    height: 140px;
 }
 
 .footerContainer {
@@ -97,21 +120,19 @@
     /* background-color: pink; */
     width: 110px;
     height: 40px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .linkContainer:hover .footerIcon {
-    filter: invert(54%) sepia(96%) saturate(1989%) hue-rotate(156deg) brightness(88%) contrast(101%);
+    filter: invert(53%) sepia(79%) saturate(355%) hue-rotate(325deg) brightness(90%) contrast(85%);
 }
 .linkContainer:hover .footerLinkName {
-    color: #00a4d6;
+    color: var(--hover);
 }
-
-
 
 
 .emailAddress {
@@ -120,8 +141,15 @@
 }
 
 .footerLinkName {
-    padding-left: 10px;
+    padding-left: 4px;
     display: block;
+}
+
+.footerText {
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: 16px;
+
 }
 
 
@@ -166,6 +194,7 @@
 
     .footerContainer {
         width: 40%;
+        justify-content: space-between;
     }
 
     .footerIcon {
