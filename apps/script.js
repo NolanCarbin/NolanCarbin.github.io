@@ -7,9 +7,8 @@ const randomColor = function() {
     return `rgb(${r}, ${g}, ${b})`
 }
 
-const body = document.querySelector('body');
-const button = document.querySelector('#colorBtn')
+const button = document.querySelector('.colorBtn')
 
 button.addEventListener('click', function() {
-    body.style.backgroundColor = randomColor()
+    button.style.color = randomColor()
 })

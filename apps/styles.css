@@ -16,8 +16,7 @@ h1, h2, p {
     color: var(--primary);
 }
 
-
-
+/* Header */
 
 .header {
     background-color: var(--accent);
@@ -58,38 +57,88 @@ h1, h2, p {
 
 .navButton:hover {
     color: var(--hover);
+    transition: 250ms;
 }
+
+
+/* Index Body */
+
+.projects {
+    display: inline-block;
+    width: 100%;
+    height: 80%;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    /* background-color: var(--secondary); */
+}
+
+.projectsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.project {
+    width: 200px;
+    padding: 10px;
+}
+
+
+
 
 body {
     background-color: var(--secondary);
 }
 
-.nolanImg {
-    border-radius: 50px;
-    width: 25%;
-    height: auto;
-    margin-left: 95px;
-}
+
+/* About body */
 
 .aboutMeContainer {
     width: 100%;
     height: auto;
     /* background-color: blue; */
-    padding-top: 120px;
-    padding-bottom: 50px;
+    padding-top: 140px;
+    padding-bottom: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
+.imgWrapper {
+    width: 350px;
+    height: 350px;
+    margin-left: 15px;
+}
+
+.nolanImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
 .aboutMeTextContainer {
-    padding-left: 60px;
-    padding-right: 60px;
+    display: inline-block;
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 25px;
 }
 
 .aboutMeText {
     padding: 10px;
 }
+
+
+
+
+
+
+
+/* Footer */
 
 .footerIcon {
     width: 18%;
@@ -105,6 +154,7 @@ body {
     align-items: center;
     width: 100%;
     height: 140px;
+    background-color: var(--secondary);
 }
 
 .footerContainer {
@@ -129,9 +179,11 @@ body {
 
 .linkContainer:hover .footerIcon {
     filter: invert(53%) sepia(79%) saturate(355%) hue-rotate(325deg) brightness(90%) contrast(85%);
+    transition: 250ms;
 }
 .linkContainer:hover .footerLinkName {
     color: var(--hover);
+    transition: 250ms;
 }
 
 
@@ -154,7 +206,10 @@ body {
 
 
 
+/* SMALLER SCREEN SIZE */
+
 @media all and (max-width: 800px) {
+    /* Header */
     .navBar {
         flex-direction: column;
         justify-content: center;
@@ -168,12 +223,21 @@ body {
         margin-right: 0px;
     }
 
-    .nolanImg {
-        width: 40%;
-        height: auto;
-        margin-top: 100px;
-        margin-left: 0px;
+    /* Index: projects */
+
+    .projectsContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+    .projects {
+        margin-top: 160px;
+        margin-bottom: 20px;
+    }
+
+
+    /* About: body */
 
     .aboutMeContainer {
         flex-direction: column;
@@ -182,11 +246,31 @@ body {
         padding-top: 60px;
     }
 
-    .aboutMeTextContainer {
-        padding-top: 40px;
-        padding-left: 25%;
-        padding-right: 25%;
+    .imgWrapper {
+        width: 280px;
+        height: 280px;
+        margin-left: 0px;
+        margin-top: 100px;
     }
+
+    .nolanImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+   
+    .aboutMeTextContainer {
+        width: 70%;
+        padding-top: 40px;
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-left: 0;
+    }
+
+
+    /* Footer */
 
     .footerLinkName {
        display: none;
