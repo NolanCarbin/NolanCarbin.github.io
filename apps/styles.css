@@ -12,8 +12,12 @@
     --hover: #d77a61
 }
 
-h1, h2, p {
+h1, h2, h3, h4, h5, h6, p {
     color: var(--primary);
+}
+
+body {
+    background-color: var(--secondary);
 }
 
 /* Header */
@@ -63,7 +67,7 @@ h1, h2, p {
 
 /* Index Body */
 
-.projects {
+.projectSection {
     display: inline-block;
     width: 100%;
     height: 80%;
@@ -75,22 +79,28 @@ h1, h2, p {
 .projectsContainer {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
+    margin-bottom: 60px;
 }
 
 .project {
-    width: 200px;
-    padding: 10px;
+    width: 35%;
+    padding: 20px;
+    background-color: var(--accent);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-
-
-body {
-    background-color: var(--secondary);
+.projectImg {
+    width: 100%;
+    padding: 0px 0px 10px 0px;
 }
+
 
 
 /* About body */
@@ -133,18 +143,9 @@ body {
 }
 
 
-
-
-
-
-
 /* Footer */
 
-.footerIcon {
-    width: 18%;
-    height: auto;
 
-}
 
 .footer {
     /* background-color: red; */
@@ -166,6 +167,11 @@ body {
     align-items: flex-start;
 }
 
+.emailAddress {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .linkContainer {
     /* background-color: pink; */
     width: 110px;
@@ -178,7 +184,7 @@ body {
 }
 
 .linkContainer:hover .footerIcon {
-    filter: invert(53%) sepia(79%) saturate(355%) hue-rotate(325deg) brightness(90%) contrast(85%);
+    color: var(--hover);
     transition: 250ms;
 }
 .linkContainer:hover .footerLinkName {
@@ -186,10 +192,8 @@ body {
     transition: 250ms;
 }
 
-
-.emailAddress {
-    padding-left: 40px;
-    padding-right: 40px;
+.footerIcon {
+    color: var(--primary);
 }
 
 .footerLinkName {
@@ -205,95 +209,3 @@ body {
 }
 
 
-
-/* SMALLER SCREEN SIZE */
-
-@media all and (max-width: 800px) {
-    /* Header */
-    .navBar {
-        flex-direction: column;
-        justify-content: center;
-        height: 120px;
-        margin-right: 0px;
-    }
-
-    .myName {
-        padding-bottom: 10px;
-        padding-top: 10px;
-        margin-right: 0px;
-    }
-
-    /* Index: projects */
-
-    .projectsContainer {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .projects {
-        margin-top: 160px;
-        margin-bottom: 20px;
-    }
-
-
-    /* About: body */
-
-    .aboutMeContainer {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 60px;
-    }
-
-    .imgWrapper {
-        width: 280px;
-        height: 280px;
-        margin-left: 0px;
-        margin-top: 100px;
-    }
-
-    .nolanImg {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 50%;
-    }
-
-   
-    .aboutMeTextContainer {
-        width: 70%;
-        padding-top: 40px;
-        padding-left: 15%;
-        padding-right: 15%;
-        margin-left: 0;
-    }
-
-
-    /* Footer */
-
-    .footerLinkName {
-       display: none;
-    }
-
-    .footerContainer {
-        width: 40%;
-        justify-content: space-between;
-    }
-
-    .footerIcon {
-        width: 60%;
-        height: auto;
-    }
-
-    .linkContainer {
-        width: 40px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .emailAddress {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-}

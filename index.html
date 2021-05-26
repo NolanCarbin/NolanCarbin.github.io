@@ -5,48 +5,100 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Nolan Carbin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Large screens -->
         <link rel="stylesheet" href="apps/styles.css">
+        <!-- Smaller screens -->
+        <link rel="stylesheet" href="apps/smallerScreenStyles.css">
+
         <link rel="icon" href="imgs/web-programming.png"> 
          <!-- google font: -->
          <link rel="preconnect" href="https://fonts.gstatic.com">
          <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
         <!-- -->
-        <script src="./index_files/jquery.min.js.download"></script>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!--  -->
 </head>
 <body>
     <div class="header">
         <div class="navBar">
-            <a href="https://nolancarbin.github.io/"><h1 class='myName'>Nolan Carbin</h1></a>
+            <a href="https://nolancarbin.github.io/">
+                <h1 class='myName'>Nolan Carbin</h1>
+            </a>
             <div class="navButtons">
-                <a href="https://nolancarbin.github.io/"><h2 class='navButton'>Projects</h2></a>
-                <a href="https://nolancarbin.github.io/about"><h2 class='navButton'>About</h2></a>
-                <a href=""><h2 class='navButton'>Resume</h2></a>
+                <a href="https://nolancarbin.github.io/">
+                    <h2 class='navButton'>Projects</h2>
+                </a>
+                <a href="https://nolancarbin.github.io/about">
+                    <h2 class='navButton'>About</h2>
+                </a>
+                <a href="">
+                    <h2 class='navButton'>Resume</h2>
+                </a>
             </div>
         </div>
     </div>
-    <div class='projects'>
+
+
+
+    <div class='projectSection'>
         <div class="projectsContainer">
-            <p class="project">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos illo unde rem nesciunt consequuntur magnam facere vero provident aliquid accusamus voluptates consequatur cumque quasi nisi dolores fuga, tempora quam sint!</p>
-            <p class="project">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos illo unde rem nesciunt consequuntur magnam facere vero provident aliquid accusamus voluptates consequatur cumque quasi nisi dolores fuga, tempora quam sint!</p>
+            <div class="project">
+                <a href="dungeonWizard.html">
+                    <img src="imgs/dungeonWizard/roomWithMonsters.jpg" alt="" class=projectImg>
+                </a>
+                <a href="dungeonWizard.html">
+                    <h3 class="projectName">Dungeon Wizard</h3>
+                </a>
+            </div>
+            <div class="project">
+                <a href="#">
+                    <img src="https://via.placeholder.com/500" alt="" class=projectImg>
+                </a>
+                <a href="#">
+                    <h3 class="projectName">Project Name</h3>
+                </a>
+            </div>
+            <div class="project">
+                <a href="#">
+                    <img src="https://via.placeholder.com/500" alt="" class=projectImg>
+                </a>
+                <a href="#">
+                    <h3 class="projectName">Project Name</h3>
+                </a>
+            </div>
+            <div class="project">
+                <a href="#">
+                    <img src="https://via.placeholder.com/500" alt="" class=projectImg>
+                </a>
+                <a href="#">
+                    <h3 class="projectName">Project Name</h3>
+                </a>
+            </div>
         </div>
-    </div>  
+    </div>
+    
+    
+
     <div class="footer">
         <div class="footerContainer">
             <a href="mailto:nolan2556@gmail.com" target="_blank" class="linkContainer emailAddress" >
-                <img src="imgs/sendMailIconTransparent.png" alt="" class='footerIcon'>
+                <i class="fas fa-paper-plane fa-m footerIcon"></i>
                 <p class='footerLinkName'>nolan2556@gmail.com</p>
             </a>
             <a href="https://github.com/NolanCarbin" target="_blank" class="linkContainer">
-                <img src="imgs/GitHub-Mark-32px.png" alt="" class='footerIcon'>
+                <i class="fab fa-github fa-lg footerIcon"></i>
                 <p class='footerLinkName'>nolancarbin</p>
             </a>
             <a href="https://linkedin.com/in/nolancarbin" target="_blank" class="linkContainer">
-                <img src="imgs/LI-In-Bug.png" alt="" class='footerIcon'>
+                <i class="fab fa-linkedin fa-lg footerIcon"></i>
                 <p class='footerLinkName'>nolancarbin</p>
             </a>
         </div>
         <div class="footerText">
-            <p><i>Site created by <span class="colorBtn">Nolan</span></i></p>
+            <p>
+                <i>Site created by <span class="colorBtn">Nolan</span></i>
+            </p>
         </div>
     </div>
     <script type='text/javascript' src='apps/script.js'></script>
