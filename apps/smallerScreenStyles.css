@@ -6,21 +6,26 @@
     .navBar {
         flex-direction: column;
         justify-content: center;
-        /* height: 120px; */
         height: 150px;
         margin-right: 0px;
     }
 
     .myName {
+        width: 100%;
         padding-bottom: 10px;
         padding-top: 10px;
         margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .myNameText{
+        font-size: 32px;
     }
 
     /* Index: projects */
 
     .projectSection {
-        margin-top: 200px;
+        margin-top: 180px;
         margin-bottom: 20px;
     }
 

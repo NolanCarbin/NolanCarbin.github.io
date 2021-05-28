@@ -38,12 +38,16 @@ body {
 }
 
 .myName {
-    font-size: 38px;
-    flex-grow: 8;
-    width: 250px;
+    width: 260px;
     padding: 10px;
-    margin-right: 40px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.myNameText{
+    font-size: 38px;
 }
 
 .navButtons {
