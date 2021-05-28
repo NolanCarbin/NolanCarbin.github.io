@@ -6,7 +6,8 @@
     .navBar {
         flex-direction: column;
         justify-content: center;
-        height: 120px;
+        /* height: 120px; */
+        height: 150px;
         margin-right: 0px;
     }
 
@@ -19,7 +20,7 @@
     /* Index: projects */
 
     .projectSection {
-        margin-top: 160px;
+        margin-top: 200px;
         margin-bottom: 20px;
     }
 
