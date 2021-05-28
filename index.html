@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html wtx-context="C55F142C-181A-42D1-840D-4004AF3D7E76" lang="en">
+<html lang="en">
 <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Nolan Carbin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nolan Carbin</title>
         <!-- Large screens -->
         <link rel="stylesheet" href="apps/styles.css">
         <!-- Smaller screens -->
         <link rel="stylesheet" href="apps/smallerScreenStyles.css">
-
-        <link rel="icon" href="imgs/web-programming.png"> 
          <!-- google font: -->
-         <link rel="preconnect" href="https://fonts.gstatic.com">
-         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
-        <!-- -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <!--  -->
+        <!-- Icon -->
+        <link rel="icon" href="imgs/favicon.png"/> 
+        <!-- animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <div class="header">
         <div class="navBar">
             <a href="https://nolancarbin.github.io/">
-                <h1 class='myName'>Nolan Carbin</h1>
+                <h1 class='myName animate__animated animate__backInLeft'>Nolan Carbin</h1>
             </a>
-            <div class="navButtons">
+            <div class="navButtons animate__animated animate__fadeIn animate__delay-1s">
                 <a href="https://nolancarbin.github.io/">
                     <h2 class='navButton'>Projects</h2>
                 </a>
@@ -43,9 +43,10 @@
 
     <div class='projectSection'>
         <div class="projectsContainer">
-            <div class="project">
+            <div class="project dungeonWizard">
+            <!-- <div class='projectTextContainer'><p class="projectText">A randomized roguelike game made in python using the cmu_112_graphics module.</p></div> -->
                 <a href="dungeonWizard.html">
-                    <img src="imgs/dungeonWizard/roomWithMonsters.jpg" alt="" class=projectImg>
+                    <img src="imgs/dungeonWizard/roomWithMonsters.jpg" alt="" class=projectImg> 
                 </a>
                 <a href="dungeonWizard.html">
                     <h3 class="projectName">Dungeon Wizard</h3>
@@ -53,7 +54,7 @@
             </div>
             <div class="project">
                 <a href="#">
-                    <img src="https://via.placeholder.com/500" alt="" class=projectImg>
+                    <img src="https://via.placeholder.com/801x638" alt="" class=projectImg>
                 </a>
                 <a href="#">
                     <h3 class="projectName">Project Name</h3>
@@ -61,7 +62,7 @@
             </div>
             <div class="project">
                 <a href="#">
-                    <img src="https://via.placeholder.com/500" alt="" class=projectImg>
+                    <img src="https://via.placeholder.com/800x638" alt="" class=projectImg>
                 </a>
                 <a href="#">
                     <h3 class="projectName">Project Name</h3>
@@ -69,7 +70,7 @@
             </div>
             <div class="project">
                 <a href="#">
-                    <img src="https://via.placeholder.com/500" alt="" class=projectImg>
+                    <img src="https://via.placeholder.com/800x638" alt="" class=projectImg>
                 </a>
                 <a href="#">
                     <h3 class="projectName">Project Name</h3>
@@ -101,6 +102,7 @@
             </p>
         </div>
     </div>
+    <script type="text/javascript" src='apps/jquery-3.6.0.min.js'></script>
     <script type='text/javascript' src='apps/script.js'></script>
 </body>
 </html>
